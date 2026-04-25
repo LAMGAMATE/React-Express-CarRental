@@ -1,0 +1,241 @@
+.admin-res-container {
+    padding: 40px;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-res-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blue-text { color: #3498db; }
+
+/* صندوق البحث */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    width: 350px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    width: 400px;
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: #95a5a6;
+}
+
+.filter-select {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    background: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* الجدول */
+.table-wrapper {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.res-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.res-table th {
+    background-color: #f8f9fa;
+    padding: 18px;
+    text-align: left;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #7f8c8d;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.res-table td {
+    padding: 20px 18px;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+/* بطاقة العميل داخل الجدول */
+.client-info-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.client-text { display: flex; flex-direction: column; }
+.client-name { font-weight: 600; color: #2f3640; }
+.client-phone { font-size: 0.85rem; color: #7f8c8d; margin: 2px 0; }
+.client-cin-badge {
+    font-size: 0.7rem;
+    background: #f1f2f6;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #3498db;
+    width: fit-content;
+}
+
+/* خلية التواريخ المحدثة */
+.date-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    padding-left: 15px;
+    border-left: 2px solid #e1e8ed;
+}
+
+.date-item { display: flex; align-items: center; gap: 10px; }
+.date-label { font-size: 0.65rem; font-weight: 800; color: #b2bec3; width: 20px; }
+.date-value { font-size: 0.9rem; color: #2d3436; font-weight: 500; }
+
+/* السعر والحالة */
+.price-cell { font-weight: 700; color: #2ecc71; font-size: 1.1rem; }
+
+.status-pill {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.status-pill.en_attente { background: #fff9db; color: #f59f00; }
+.status-pill.confirmee { background: #e3faf3; color: #0ca678; }
+
+/* الأزرار */
+.action-btns { display: flex; gap: 8px; }
+
+.btn-action {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-confirm { background: #0ca678; color: white; }
+.btn-delete { background: #fff5f5; color: #ff6b6b; }
+
+.btn-confirm:hover { background: #087f5b; transform: scale(1.1); }
+.btn-delete:hover { background: #ff6b6b; color: white; transform: scale(1.1); }
+
+.no-data {
+    padding: 40px;
+    text-align: center;
+    color: #95a5a6;
+    font-style: italic;
+}
+
+
+
+
+.btn-back-admin {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pagination Styling */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.pagination-container button {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.pagination-container button.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+/* بطاقات الموبايل */
+@media (max-width: 900px) {
+    .search-input { width: 100%; }
+    .res-table thead { display: none; }
+    .res-table tr {
+        display: block;
+        border: 1px solid #eee;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background: white;
+    }
+    .res-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        padding: 10px 15px;
+        border-bottom: 1px solid #f9f9f9;
+    }
+    .res-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #7f8c8d;
+        float: left;
+    }
+    .action-btns { justify-content: flex-end; }
+}
+

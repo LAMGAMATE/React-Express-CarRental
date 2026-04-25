@@ -1,0 +1,125 @@
+.my-reviews-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 80vh;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reviews-header h1 {
+    font-size: 2.8rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.review-card-premium {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f1f5f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(37, 99, 235, 0.1);
+}
+
+.review-car-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #e2e8f0;
+    padding-bottom: 15px;
+}
+
+.review-car-info img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.review-car-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #334155;
+}
+
+.date-box {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.review-content {
+    padding: 10px 0;
+}
+
+.stars-display {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.rating-val {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.review-status {
+    font-size: 0.8rem;
+    color: #10b981;
+    background: #ecfdf5;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.delete-review-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: #fff1f2;
+    color: #be123c;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.delete-review-btn:hover {
+    background: #be123c;
+    color: white;
+}
+
+.empty-reviews {
+    text-align: center;
+    padding: 100px;
+    color: #64748b;
+}

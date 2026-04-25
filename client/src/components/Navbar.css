@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-dark: #1f2937;
+    --text-gray: #4b5563;
+    --bg-white: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    background: var(--bg-white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.navbar-logo a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-accent {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+/* Wrapper for links */
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--primary-color);
+}
+
+/* Auth Section */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-register {
+    background: var(--primary-color);
+    color: white !important;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* User Profile Section */
+.user-section {
+    position: relative;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background: #f3f4f6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.welcome-msg {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.arrow {
+    font-size: 0.7rem;
+    transition: 0.3s;
+}
+
+.arrow.up { transform: rotate(180deg); }
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: white;
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f8fafc;
+    color: var(--primary-color);
+}
+
+.logout-btn {
+    color: #ef4444 !important;
+}
+
+/* Mobile Responsive */
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: var(--text-dark);
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+@media (max-width: 968px) {
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    .navbar-wrapper {
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px 0;
+        transition: 0.4s;
+        gap: 30px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar-wrapper.active {
+        left: 0;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .btn-register {
+        width: 100%;
+        text-align: center;
+    }
+}

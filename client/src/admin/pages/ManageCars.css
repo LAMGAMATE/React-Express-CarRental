@@ -1,0 +1,186 @@
+
+
+/* تنسيق الجدول */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+.cars-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cars-table th {
+    padding: 15px;
+    background: #f8fafc;
+    color: #64748b;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.cars-table td {
+    padding: 15px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+
+.table-img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* أزرار الأكشن */
+.table-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background: #fbbf24; /* أصفر */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-delete {
+    background: #ef4444; /* أحمر */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-add-new {
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+
+
+/* تحسين خلية معلومات السيارة */
+.car-info-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-name {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1rem;
+}
+
+.car-desc-short {
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+/* تصميم كبسولة الوقود */
+.badge-fuel {
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #475569;
+    text-transform: capitalize;
+}
+
+/* تصميم حالة التوفر (Status) */
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-badge.available {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-badge.unavailable {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* زر الإضافة العلوي */
+.btn-add-car-top {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-add-car-top:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+
+
+/* تنسيق خلية الوصف */
+.description-cell {
+    max-width: 250px; /* تحديد عرض خلية الوصف لكي لا يتوسع الجدول كثيراً */
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.4;
+}
+
+.desc-content {
+    word-wrap: break-word;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.show-more-btn:hover {
+    color: #1e40af;
+}
+
+/* تحسين اسم السيارة */
+.car-name-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-name-cell strong {
+    color: #1e293b;
+    font-size: 1rem;
+}
+
+.car-name-cell span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+
+

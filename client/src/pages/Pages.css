@@ -1,0 +1,275 @@
+.page-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.blue-text { color: #2563eb; }
+
+.page-content p {
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+/* Contact Specific Styles */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h3 { margin-bottom: 15px; }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.btn-send {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send:hover { background: #1d4ed8; }
+
+
+
+
+
+/*      Pages.css    Home  */
+
+.home-container { padding: 40px 5%; }
+.hero-section { text-align: center; margin-bottom: 50px; }
+.hero-section h1 { font-size: 2.5rem; color: #1f2937; }
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.car-card:hover { transform: translateY(-5px); }
+
+.car-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-details { padding: 20px; }
+.car-info-tags { margin: 10px 0; display: flex; gap: 10px; }
+.car-info-tags span {
+    background: #f3f4f6;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price { font-weight: 800; color: #2563eb; font-size: 1.2rem; }
+.price span { font-size: 0.8rem; color: #9ca3af; }
+
+.btn-reserve {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-login-to-reserve {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+
+/*   Details car  */
+
+.btn-details {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-details:hover {
+    background: #eff6ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.contact-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* ألوان الكروت */
+.whatsapp .card-icon { background: #dcfce7; color: #166534; }
+.phone .card-icon { background: #eff6ff; color: #1d4ed8; }
+.email .card-icon { background: #f1f5f9; color: #475569; }
+
+.contact-card h4 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin: 0;
+}
+
+.contact-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.card-action {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-social-section {
+    text-align: center;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-tag {
+    padding: 8px 20px;
+    background: #f8fafc;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-tag:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+
+
+
+.btn-retour {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #374151;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-retour:hover {
+    background: #e5e7eb;
+    color: #000;
+}

@@ -1,0 +1,138 @@
+/* Admin.css */
+.admin-container {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8fafc;
+    min-height: calc(100vh - 80px);
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title {
+    font-size: 2.4rem;
+    color: #1e293b;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.blue-text {
+    color: #2563eb;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 1.05rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #eef2f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* يوسط كل محتويات الكرت */
+    justify-content: flex-start;
+    min-height: 380px;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-card h3 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-main {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    margin-top: auto; /* يدفع الزر للقاع دائماً */
+}
+
+.btn-main:hover {
+    background: #1d4ed8;
+}
+
+.sub-menu-options {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-link {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s;
+    text-align: left;
+}
+
+.sub-link:hover {
+    background: #e2e8f0;
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.current-date {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: capitalize; 
+}

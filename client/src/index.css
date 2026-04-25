@@ -1,0 +1,29 @@
+/* index.css */
+:root {
+  --blue-primary: #2563eb;
+  --bg-light: #f8fafc;
+}
+
+* {
+  box-sizing: border-box; /* لضمان أن الحواف لا تزيد من عرض العناصر */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-light);
+  overflow-x: hidden; /* يمنع ظهور شريط التمرير الأفقي البشع */
+}
+
+#root {
+  width: 100vw; /* عرض الشاشة بالكامل */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* يجعل المحتوى يملأ الفراغ المتبقي */
+  width: 100%;
+}
