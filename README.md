@@ -3,6 +3,9 @@
 ## 📋 Description
 Le projet de gestion de location de véhicules pour l’agence **"Two Go Car Rental"** a pour objectif principal l’automatisation et la numérisation complète du processus de réservation. 
 
+
+<img width="944" height="428" alt="acceuil" src="https://github.com/user-attachments/assets/0a7874b9-dbee-4ec9-bf95-4dcda61c9770" />
+
 En réponse aux défis posés par le système traditionnel, ce système a été conçu pour garantir une expérience utilisateur fluide et une gestion administrative efficace, permettant de passer d'une gestion manuelle à une plateforme numérique intégrée.
 
 ## 🚀 Fonctionnalités Principales (Besoins Fonctionnels)
@@ -43,9 +46,7 @@ npm start
 
 Ce projet est réalisé en partenariat avec l'équipe **RISING STARS**. Nous croyons fermement au travail d'équipe pour offrir des solutions logicielles de haute qualité.
 
-<img width="944" height="428" alt="acceuil" src="https://github.com/user-attachments/assets/5aeff481-8241-402e-8a20-210baa4e2471" />
 
-<img width="739" height="421" alt="dashboard admin" src="https://github.com/user-attachments/assets/bdc5216a-7f2f-4af6-81ce-13ef29d630f8" />
 
 
 ---
