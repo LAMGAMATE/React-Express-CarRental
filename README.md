@@ -20,7 +20,7 @@ Ce projet est développé en utilisant la stack **MERN** (ou React/Node) :
 * **Frontend :** React.js
 * **Backend :** Node.js / Express.js
 * **Base de données :** MongoDB (ou MySQL selon votre configuration)
-* **Style :** CSS / Bootstrap (أو Tailwind حسب ما استعملت)
+* **Style :** CSS / Bootstrap
 
 ## 👥 Partenariat et Collaboration
 
